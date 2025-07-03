@@ -11,7 +11,7 @@ function App() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h1>Full Name Display</h1>
+      <h2>Full Name Display</h2>
       <label>First Name:</label>
       <input name="fname" required />
       <br />
