@@ -10,17 +10,19 @@ function App() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Full Name Display</h2>
-      <label>First Name:</label>
-      <input name="fname" required />
-      <br />
-      <label>Last Name:</label>
-      <input name="lname" required />
-      <br />
-      <button type="submit">Submit</button>
+    <div>
+      <h1>Full Name Display</h1>
+      <form onSubmit={handleSubmit}>
+        <label>First Name:</label>
+        <input name="fname" required />
+        <br />
+        <label>Last Name:</label>
+        <input name="lname" required />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
       {!!fullName?.length && <p>Full Name: {fullName}</p>}
-    </form>
+    </div>
   );
 }
 
